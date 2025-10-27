@@ -24,7 +24,7 @@ encoder = OneHotEncoder(handle_unknown='ignore')
 R_squared = []
 R_squared_labels = []
 
-df = pd.read_csv('/Users/jacklewendon/Library/CloudStorage/OneDrive-SetonHallUniversity/SHU/7001 - Intro to Business Analytics_/Final Project 2/f1_2024_all_laps.csv')
+df = pd.read_csv('f1_2024_all_laps.csv')
 
 df = df.dropna(subset=['AirTemp', 'TrackTemp', 'Humidity', 'WindSpeed', 'Rainfall']).reset_index(drop=True)
 df.drop(columns = ['Time','IsAccurate','DriverNumber',], axis = 1,inplace = True )
